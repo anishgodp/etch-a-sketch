@@ -1,0 +1,40 @@
+/* Use Flexbox to make the divs appear as a grid (versus just one on each line). */
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+	padding: 20px;
+}
+
+button {
+	padding: 10px 20px;
+	font-size: 16px;
+	cursor: pointer;
+	background-color: #4caf50;
+	color: white;
+	border: none;
+	border-radius: 5px;
+}
+button:hover {
+	background-color: #45a049;
+}
+
+.container {
+	width: 960px;
+	height: 960px;
+	display: flex;
+	flex-wrap: wrap;
+	border: 2px solid black;
+}
+
+.grid-square {
+	box-sizing: border-box;
+	border: 1px solid #ddd;
+	transition: background-color 0.2s ease;
+}
+
+.colored {
+	background-color: #333;
+}
